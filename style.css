@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-repeat: no-repeat;
+    height:300vh;
+    background: linear-gradient(to top, #000000, #434343);
+}
+.header{
+    position: sticky;
+    top:0;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    font-size: 10px;
+}
+ul li {
+   margin-left: 20px;
+   margin-bottom: 10px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   color: white;
+}
+h1{
+    height:60px;
+    text-align: center;
+    font-size: 45px;
+}.canada,.danimark,.germany,.brazil,.korea .header {
+    margin-top: 10px;
+}
+ul{
+    margin-top: 10px;
+}
+.header{
+    animation: showup 7s forwards;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    30% {opacity:1;}
+}
+@keyframes slidein {
+    0% { margin-left:-500px;}
+    100% { margin-left:600px }
+}
+@keyframes slideinflags {
+    0% { margin-left:-500px;}
+    100% { margin-left:700px }
+}
+.azerbaijan ul li {
+    
+    animation: slidein 3s forwards;
+}
+.germany ul li {
+    animation: slidein 4s forwards;
+} 
+.russian ul li{
+    animation: slidein 5s forwards;
+}
+.indian ul li{
+    animation: slidein 6s forwards;
+}
+.poland ul li{
+    animation: slidein 7s forwards;
+}
+
+.gerflag{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    left: 60px;
+}
+.azeflag{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    left: 60px;
+}
+.rusflag{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    left: 60px;
+}
+.indflag{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    left: 60px;
+}
+.polandflag{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    left: 60px;
+}
+.azeflag::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:rgb(255, 0, 0);
+    border-top: 50px solid #001aff;
+    border-bottom: 50px solid #2db404;
+    box-sizing: border-box;
+    filter: url(#wavy);
+    animation: slideinflags 1.5s forwards;
+    z-index:-111;
+}
+.gerflag::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:rgb(255, 2, 2);
+    border-top: 50px solid #000000;
+    border-bottom: 50px solid #f4ff61;
+    box-sizing: border-box;
+    filter: url(#wavy);
+    animation: slideinflags 2s forwards;
+    z-index:-111;
+}
+.rusflag::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:rgb(0, 60, 255);
+    border-top: 50px solid #ffffff;
+    border-bottom: 50px solid #ff0000;
+    box-sizing: border-box;
+    filter: url(#wavy);
+    animation: slideinflags 3s forwards;
+    z-index:-111;
+}
+.indflag::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:rgb(255, 255, 255);
+    border-top: 50px solid #ffbb00;
+    border-bottom: 50px solid #2dff03;
+    box-sizing: border-box;
+    filter: url(#wavy);
+    animation: slideinflags 4s forwards;
+    z-index:-111;
+}
+.polandflag::before{
+    content: '';
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    border-top: 50px solid #ff0000;
+    border-bottom: 50px solid #ffffff;
+    box-sizing: border-box;
+    filter: url(#wavy);
+    animation: slideinflags 5s forwards;
+    z-index:-111;
+}
+svg{
+    width: 0;
+    height: 0;
+}
+h1{
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+}
